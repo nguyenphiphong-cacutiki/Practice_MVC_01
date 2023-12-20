@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="../asset/bootstrap-5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/bootstrap-5.3.2/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href=<?=ROOT.'/asset/bootstrap-5.3.2/css/bootstrap.min.css'?>> -->
-    <link rel="stylesheet" href="../asset/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">
 </head>
 <body>
     <h2 class="text-center text-success">Khách hàng</h2>
@@ -51,7 +51,7 @@
         </div>
     </div>
     
-    <script src="../asset//fontawesome/js/all.min.js"></script>
-    <script src="../asset/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/fontawesome/js/all.min.js"></script>
+    <script src="asset/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

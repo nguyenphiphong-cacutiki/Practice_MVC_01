@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
-    <link rel="stylesheet" href="../asset/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="../asset/bootstrap-5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="asset/bootstrap-5.3.2/css/bootstrap.min.css">
 </head>
 <body>
    <div class="container">
@@ -55,8 +55,8 @@
     </div>
    </div>
 
-    <script src="../asset/fontawesome/js/all.min.js"></script>
-    <script src="../asset/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="../asset/jquery-3.7.1.min.js"></script>
+    <script src="asset/fontawesome/js/all.min.js"></script>
+    <script src="asset/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/jquery-3.7.1.min.js"></script>
 </body>
 </html>
