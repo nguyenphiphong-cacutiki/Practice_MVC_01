@@ -48,7 +48,7 @@ class Customer{
         $stmt->execute(['name' => $this->name, 'describes' => $this->describes, 'import' => $this->import, 'id' => $this->id]);
     }
     function delete(){
-        echo $this->id;
+        // echo $this->id;
         $stmt = $this->conn->prepare('delete from khach_hang where id=:id');
         $stmt->execute(['id' => $this->id]);
     }

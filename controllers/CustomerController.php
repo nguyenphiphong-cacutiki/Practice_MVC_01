@@ -1,5 +1,5 @@
 <?php 
-require_once ROOT.'/models/Customer.php';
+require_once 'models/Customer.php';
 class CustomerController{
     private $db;
     private $customer = null;
