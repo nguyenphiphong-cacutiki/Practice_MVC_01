@@ -10,24 +10,30 @@
 <body>
    <div class="container">
     <div class="row p-3">
-        <h4 class="text-center fw-bold text-success">Add new customer</h4>
-        <form method="POST" action="index.php?controller=customer&action=save">
-            <div class="input-group">
-                <span class="input-group-text fw-bold bg-light">Name</span>
-                <input required name = 'name' type="text" class="form-control" placeholder="">
+        <h4 class="text-uppercase text-decoration-underline text-center fw-bold text-success">Add new customer</h4>
+        <form class="bg-info" method="POST" action="index.php?controller=book&action=save">
+            <div class="input-group mt-3">
+                <span class="input-group-text fw-bold bg-light">Tên sách</span>
+                <input required name = 'title' type="text" class="form-control" placeholder="">
+            </div>
+            <div class="input-group mt-3">
+                <span class="input-group-text fw-bold bg-light">Tác giả</span>
+                <input required name = 'author' type="text" class="form-control" placeholder="">
+            </div>
+            <div class="input-group mt-3">
+                <span class="input-group-text fw-bold bg-light">Năm xuất bản</span>
+                <input required name = 'public' type="number" class="form-control" placeholder="">
             </div>
             
-            
-            <!-- <div class="input-group mt-2">
-                <span class="input-group-text fw-bold bg-light">User</span>
-                <select class="form-select">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+            <div class="input-group mt-2">
+                <span class="input-group-text fw-bold bg-light">Tên thể loại</span>
+                <select class="form-select" name='genre'>
+                    <?php foreach($genreNames as $item):?>
+                        <option value="<?=$item->getId()?>"><?=$item->getName()?></option>
+                        <?php endforeach;?>
                 </select>
             </div>
-            <div class="input-group mt-2">
+            <!-- <div class="input-group mt-2">
                 <span class="input-group-text fw-bold bg-light">Status</span>
                 <select class="form-select">
                     <option>Publicsher</option>
@@ -35,7 +41,7 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-            </div> -->
+            </div>
 
             <div class="form-floating my-2">
                 <input required type="text" class="form-control" id="pwd" placeholder="Description..." name="describes">
@@ -44,13 +50,13 @@
             <div class="input-group mb-2">
                 <span class="input-group-text fw-bold bg-light">Import</span>
                 <input required name = 'import' type="date" class="form-control" placeholder="">
-            </div>
+            </div> -->
             <!-- <div class="form-floating mt-2">
                 <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Message</label>
             </div> -->
         
-            <button type="submit" class="btn btn-primary mt-4">Add</button>
+            <button type="submit" class="btn btn-primary my-3">Thêm</button>
         </form>
     </div>
    </div>

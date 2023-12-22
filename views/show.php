@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">
 </head>
 <body>
-    <h2 class="text-center text-success">Customer</h2>
+    <h2 class="text-center text-uppercase text-decoration-underline text-success">Customer</h2>
 
 
     <div class="container">

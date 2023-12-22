@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update</title>
+    <title>Add</title>
     <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="asset/bootstrap-5.3.2/css/bootstrap.min.css">
 </head>
 <body>
    <div class="container">
     <div class="row p-3">
-        <h4 class="text-center fw-bold text-success">Update customer</h4>
-        <form method="POST" action="index.php?controller=customer&action=update&id=<?=$customer->getId()?>">
-            <div class="input-group">
-                <span class="input-group-text fw-bold bg-light">Name</span>
-                <input required name = 'name' value="<?=$customer->getName();?>" type="text" class="form-control" placeholder="">
+        <h4 class="text-uppercase text-decoration-underline text-center fw-bold text-success">sửa</h4>
+        <form class="bg-info" method="POST" action="index.php?controller=book&action=update&id=<?=$book->getId()?>">
+            <div class="input-group mt-3">
+                <span class="input-group-text fw-bold bg-light">Tên sách</span>
+                <input value="<?=$book->getTitle()?>" required name = 'title' type="text" class="form-control" placeholder="">
+            </div>
+            <div class="input-group mt-3">
+                <span class="input-group-text fw-bold bg-light">Tác giả</span>
+                <input value="<?=$book->getAuthor()?>" required name = 'author' type="text" class="form-control" placeholder="">
+            </div>
+            <div class="input-group mt-3">
+                <span class="input-group-text fw-bold bg-light">Năm xuất bản</span>
+                <input value="<?=$book->getPublic()?>" required name = 'public' type="number" class="form-control" placeholder="">
             </div>
             
-            
-            <!-- <div class="input-group mt-2">
-                <span class="input-group-text fw-bold bg-light">User</span>
-                <select class="form-select">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+            <div class="input-group mt-2">
+                <span class="input-group-text fw-bold bg-light">Tên thể loại</span>
+                <select class="form-select" name='genre'>
+                        <option value="<?=$genreFocus->getId()?>"><?=$genreFocus->getName()?></option>
+                        <?php foreach($genres as $item):?>
+                            <option value="<?=$item->getId()?>"><?=$item->getName()?></option>
+                        <?php endforeach;?>
                 </select>
             </div>
-            <div class="input-group mt-2">
+            <!-- <div class="input-group mt-2">
                 <span class="input-group-text fw-bold bg-light">Status</span>
                 <select class="form-select">
                     <option>Publicsher</option>
@@ -35,22 +42,22 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-            </div> -->
+            </div>
 
             <div class="form-floating my-2">
-                <input value="<?=$customer->getDescribes();?>" required type="text" class="form-control" id="pwd" placeholder="Description..." name="describes">
+                <input required type="text" class="form-control" id="pwd" placeholder="Description..." name="describes">
                 <label for="pwd">describes...</label>
             </div>
             <div class="input-group mb-2">
                 <span class="input-group-text fw-bold bg-light">Import</span>
-                <input value="<?=$customer->getImport();?>" required name = 'import' type="date" class="form-control" placeholder="">
-            </div>
+                <input required name = 'import' type="date" class="form-control" placeholder="">
+            </div> -->
             <!-- <div class="form-floating mt-2">
                 <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Message</label>
             </div> -->
         
-            <button type="submit" class="btn btn-primary mt-4">Update</button>
+            <button type="submit" class="btn btn-primary my-3">Sửa</button>
         </form>
     </div>
    </div>
